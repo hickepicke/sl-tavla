@@ -3,11 +3,7 @@
 A tiny always-on-top departure board for SL, drawn as an amber LED dot matrix like the
 signs on the platforms. No window chrome — just a floating black rectangle.
 
-```
-471 Slussen      3 min
-409 Slussen      6 min
-422 Slussen      9 min
-```
+![SL-tavla showing buses from Nacka Forum to Slussen](docs/screenshot.png)
 
 Built with [Tauri 2](https://tauri.app) + Svelte 5. Runs on Windows, macOS and Linux.
 
