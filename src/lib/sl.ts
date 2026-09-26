@@ -58,8 +58,12 @@ export async function resolveSite(query: string | number): Promise<Site> {
   return site;
 }
 
-/** Key identifying a line heading in a particular direction. */
-export const routeKey = (line: string, destination: string) => `${line}|${norm(destination)}`;
+/**
+ * Key identifying a line heading in a particular direction. The journey planner
+ * sometimes says "Fruängen via T-Centralen" where departures just say "Fruängen".
+ */
+export const routeKey = (line: string, destination: string) =>
+  `${line}|${norm(destination).replace(/\s+via\s.*$/, '')}`;
 
 interface Trip {
   journeys?: {

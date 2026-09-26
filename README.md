@@ -10,7 +10,7 @@ Built with [Tauri 2](https://tauri.app) + Svelte 5. Runs on Windows, macOS and L
 ## How it works
 
 - **Stops** are looked up by name in SL's Transport API (`/v1/sites`).
-- **Which buses go where you're going**: at startup (and hourly) the app asks SL's journey
+- **Which lines go where you're going** (bus, metro, commuter train, tram, boat): at startup (and hourly) the app asks SL's journey
   planner for direct trips origin → destination at a few points in time, and remembers
   each *line + terminus* it suggests (e.g. `471 → Slussen`).
 - **Departures** are polled from the Transport API and filtered to those routes.
