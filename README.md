@@ -27,7 +27,7 @@ then *Ladda om* to apply.
 
 | Key              | Default           | Meaning                                                    |
 |------------------|-------------------|------------------------------------------------------------|
-| `origin`         | `Ektorps centrum` | Stop to show departures from (SL name or site id)          |
+| `origin`         | `Nacka Forum`     | Stop to show departures from (SL name or site id)          |
 | `destination`    | `Slussen`         | Only show departures that go directly here                 |
 | `lines`          | `[]`              | Optional extra filter, e.g. `["471", "409"]`               |
 | `rows`           | `2`               | Number of departures shown                                 |
