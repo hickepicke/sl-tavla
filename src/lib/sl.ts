@@ -128,14 +128,13 @@ export async function fetchDepartures(site: Site): Promise<Departure[]> {
   }));
 }
 
-/** Formats time until departure the way SL's platform signs do. */
+/** Formats time until departure: "Nu", "5 min", or a clock time more than an hour out. */
 export function countdown(d: Departure, now: Date): string {
   const min = Math.floor((d.time.getTime() - now.getTime()) / 60_000);
-  // SL shows a clock time for departures without realtime prediction and those far off.
-  if (!d.realtime || min > 60) {
-    return d.time.toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' });
-  }
-  return min <= 0 ? 'Nu' : `${min} min`;
+  if (min <= 0) return 'Nu';
+  // Unlike SL's signs, count down even without a realtime prediction; clock time only when far off.
+  if (min <= 60) return `${min} min`;
+  return d.time.toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' });
 }
 
 export const TEST_DEPARTURES = (now: Date): Departure[] =>
