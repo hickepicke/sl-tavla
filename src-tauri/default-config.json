@@ -1,0 +1,10 @@
+{
+  "origin": "Ektorps centrum",
+  "destination": "Slussen",
+  "lines": [],
+  "rows": 2,
+  "width": 480,
+  "dotPitch": 3,
+  "refreshSeconds": 30,
+  "testData": false
+}

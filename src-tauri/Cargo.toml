@@ -1,0 +1,17 @@
+[package]
+name = "sl-tavla"
+version = "0.1.0"
+description = "SL departure board that floats on your desktop"
+edition = "2021"
+
+[lib]
+name = "sl_tavla_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "macos-private-api"] }
+tauri-plugin-opener = "2"
+tauri-plugin-window-state = "2"
