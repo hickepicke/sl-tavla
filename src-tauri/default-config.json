@@ -2,7 +2,7 @@
   "origin": "Nacka Forum",
   "destination": "Slussen",
   "lines": [],
-  "rows": 2,
+  "rows": 3,
   "width": 480,
   "dotPitch": 3,
   "refreshSeconds": 30,

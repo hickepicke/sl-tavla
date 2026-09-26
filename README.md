@@ -6,6 +6,7 @@ signs on the platforms. No window chrome — just a floating black rectangle.
 ```
 471 Slussen      3 min
 409 Slussen      6 min
+422 Slussen      9 min
 ```
 
 Built with [Tauri 2](https://tauri.app) + Svelte 5. Runs on Windows, macOS and Linux.
@@ -30,7 +31,7 @@ then *Ladda om* to apply.
 | `origin`         | `Nacka Forum`     | Stop to show departures from (SL name or site id)          |
 | `destination`    | `Slussen`         | Only show departures that go directly here                 |
 | `lines`          | `[]`              | Optional extra filter, e.g. `["471", "409"]`               |
-| `rows`           | `2`               | Number of departures shown                                 |
+| `rows`           | `3`               | Number of departures shown                                 |
 | `width`          | `480`             | Width in pixels (long stop names scroll if they don't fit)  |
 | `dotPitch`       | `3`               | Pixels per LED dot                                         |
 | `refreshSeconds` | `30`              | How often departures are fetched                           |
