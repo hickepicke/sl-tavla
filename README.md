@@ -49,4 +49,6 @@ npm run tauri build   # installer for the current OS
 The UI also runs in a plain browser with `npm run dev`. Configure it via the URL:
 `http://localhost:1420/?test&rows=3&pitch=4&origin=Slussen&destination=Ektorps%20centrum`.
 
-Releases for all three platforms are built by GitHub Actions when a `v*` tag is pushed.
+Releases for all three platforms are built and published by GitHub Actions when a `v*` tag is
+pushed: bump the version in `package.json`, `src-tauri/tauri.conf.json` and `src-tauri/Cargo.toml`,
+then `git tag vX.Y.Z && git push origin vX.Y.Z`.

@@ -1,6 +1,6 @@
 [package]
 name = "sl-tavla"
-version = "0.1.0"
+version = "0.1.1"
 description = "SL departure board that floats on your desktop"
 edition = "2021"
 
